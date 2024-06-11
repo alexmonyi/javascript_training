@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning About Nodes</title>
+    <style>
+        *{
+            border:2px solid #dedede;
+            padding: 15px;
+            margin:15px;
+        }
+        html{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            max-width: 600px;
+            font-family: sans-serif;
+        }
+ 
+    </style>
 </head>
 <body>
-    <h1> An Element Node </h1> <!--This is is Parent Node-->
-    <!-- This is a Comment Node. This is a Child Node-->
-    This is a Text Node. <!--THis is also a Chile Node-->
-    <!--THe Commment and Text Nodes are Siblings-->
+    <h1> Shark World </h1> 
+    <p>The World;s Leading Source on <strong>related information.</strong></p>
+    <h2>Types of Sharks</h2>
+    <ul>
+        <li>Hammerhead</li>
+        <li>Tiger</li>
+        <li>Great White</li>
+    </ul>
+
+    <script>
+        const h1=document.getElementsByTagName('h1')[0];
+        const p=document.getElementsByTagName('p')[0];
+        const ul=document.getElementsByTagName('ul')[0];
+        const html=document.documentElement;
+        
+    </script>
 </body>
 </html>
