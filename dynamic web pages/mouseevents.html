@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse events</title>
+
+<style>
+    #myElement{
+        width:200 px;
+        height:200 px;
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+        line-height: 200px;
+    
+
+    }
+</style>    
+</head>
+<body>
+  
+    <div id="myElement"> Hover or Click me</div>
+ <script>
+    const myElement=document.getElementById('myElement');
+    
+    myElement.addEventListener('click',function(){
+    console.log('Element Clicked')
+  })
+
+  myElement.addEventListener('dblclick',function(){
+    console.log('Element double clicked')
+  })
+
+  myElement.addEventListener('mouseover',function(){
+    console.log('Mouse Over Element')
+  })
+
+  myElement.addEventListener('mouseout',function(){
+    console.log('Mouse out of Element')
+  })
+  myElement.addEventListener('mousemove',function(){
+    console.log('Mouse moving within Element')
+  })
+
+ </script>   
+</body>
+</html>
